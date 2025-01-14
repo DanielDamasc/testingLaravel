@@ -1,17 +1,15 @@
-@extends('layouts/main_layout')
+@extends('layouts.main_layout')
+
+@section('page_title', 'Home page')
+
 @section('content')
 
-<form action="{{ route('submit') }}" method="post">
-    @csrf
-    <div class="d-flex justify-content-center mt-5">
-        <input type="text" name="nome">
-        <button type="submit">Enviar</button>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col card p-5 bg-secondary text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
     </div>
-    
-    
-    @error('nome')
-        <p class="alert alert-danger">{{ $message }}</p>
-    @enderror
-</form>
+</div>
 
 @endsection
