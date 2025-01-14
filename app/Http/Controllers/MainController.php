@@ -10,7 +10,7 @@ class MainController extends Controller
     public function showPage(): View
     {
         $data = [
-            'Dan' => [
+            'Carol' => [
                 'Ingles',
                 'Portugues'
             ],
