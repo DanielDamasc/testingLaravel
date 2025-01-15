@@ -1,12 +1,7 @@
-@extends('layouts.main_layout')
-@section('content')
+<x-component-layout>
 
-    <div class="text-center">
+    <x-slot:title>HOME</x-slot:title>
 
-        @foreach ($pessoas_linguas as $pessoa => $linguas)
-            <x-card-pessoa :$pessoa :$linguas />
-        @endforeach
+    <h1>TESTE</h1>
 
-    </div>
-
-@endsection
+</x-component-layout>

@@ -6,17 +6,14 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class CardPessoa extends Component
+class ComponentLayout extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct(
-        public string $pessoa, // nome-pessoa
-        public array $linguas // linguas-pessoa
-        )
+    public function __construct()
     {
-        
+        //
     }
 
     /**
@@ -24,6 +21,6 @@ class CardPessoa extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.card-pessoa');
+        return view('components.component-layout');
     }
 }
